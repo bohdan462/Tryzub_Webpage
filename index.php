@@ -1,2 +1,2 @@
-<?php header( 'Location: /Static_web/index.html' ) ;  ?>
+<?php header( 'Location: /Dynamic_web/index.html' ) ;  ?>
 

@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 Static_website/
+web: vendor/bin/heroku-php-apache2 Dynamic_website/
