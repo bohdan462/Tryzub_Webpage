@@ -406,6 +406,13 @@ header{
 
 /*Tasteful recipes*/
 .tasteful-recipes{
+    background: url("images/AdobeStock_283373319.jpeg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Bar*/
+.bar-recipes{
     background: url("images/DSC01893.jpg") center no-repeat;
     background-size: cover;
     background-attachment: fixed;
