@@ -25,13 +25,13 @@ menuToggler.addEventListener('click', function () {
     body.classList.toggle('open');
 });
 
-//// Parallax scrolling effect
-// window.addEventListener('scroll', function () {
-//    const parallax = document.querySelector('.parallax');
-//    let scrollPosition = window.pageYOffset;
-//  
-//    parallax.style.transform = 'translateY(' + scrollPosition * -.10 + 'px)';
-//  });
+// Parallax scrolling effect
+ window.addEventListener('scroll', function () {
+    const parallax = document.querySelector('.parallax');
+    let scrollPosition = window.pageYOffset;
+  
+    parallax.style.transform = 'translateY(' + scrollPosition * -.10 + 'px)';
+  });
 
 // Scroll reveal
 window.sr = ScrollReveal();

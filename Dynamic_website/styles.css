@@ -154,6 +154,7 @@ header{
     color: var(--secondary-font-color);
 }
 
+/*
 .backdrop{
     position: absolute;
     top: 0;
@@ -161,6 +162,8 @@ header{
     left: 0;
     right: 0;
 };
+*/
+
 /*Hero*/
 .hero{
     width: 100%;
@@ -168,7 +171,7 @@ header{
     background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("images/IMG_5067.JPG") center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     display: flex;
     align-items: center;
     text-align: center;
@@ -417,7 +420,7 @@ header{
     background: url("images/AdobeStock_283373319.jpeg") center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 /*Bar*/
@@ -425,7 +428,7 @@ header{
     background: url("images/DSC01893.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .between{
@@ -451,7 +454,7 @@ header{
     background: url("images/AdobeStock_283373265.jpeg") center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 /*Footer*/
