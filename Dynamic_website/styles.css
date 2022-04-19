@@ -55,6 +55,12 @@ p{
     margin: 0 auto;
     padding: 0 2.4rem;
 }
+.varenykyContainer{
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: ;
+}
 
 /*Header*/
 header{
@@ -168,10 +174,10 @@ header{
 .hero{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(47, 23, 15, 0.2), rgba(47, 23, 15, 0.65)), url("images/DSC05405.jpg") center;
+    background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.1)), url("images/DSC05405.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     text-align: center;
@@ -209,6 +215,20 @@ header{
     font-size: 5.5rem;
     font-family: var(--secondary-font);
     color: var(--secondary-font-color2);
+    font-weight: 100;
+    line-height: .36;
+    letter-spacing: 2px;
+    position: relative;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: .5s;
+    z-index: 1;
+}
+
+.sub-headline3{
+    font-size: 5.5rem;
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);
     font-weight: 100;
     line-height: .36;
     letter-spacing: 2px;
@@ -394,6 +414,15 @@ header{
     transition: color .5s;
 }
 
+.btn.btn-warning{
+    background-color:var(--secondary-font-color);
+    font-size: 1.5rem;
+    color: #fff;
+    border:none;
+    border-radius:15px;
+    box-shadow: 0px 0px 1px 1px var(--secondary-font-color);
+}
+
 .body-btn::before{
     content: '';
     position: absolute;
@@ -420,7 +449,7 @@ header{
     background: url("images/AdobeStock_283373319.jpeg") center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 /*Bar*/
@@ -428,7 +457,7 @@ header{
     background: url("images/DSC01893.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .discover-our-menu{
@@ -440,6 +469,11 @@ header{
     align-items: center;
 }
 
+.animatedVarenyky{
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
 /*Discover our menu*/
 .image-group{
     display: grid;
@@ -464,13 +498,59 @@ header{
     box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.2)
 }
 
+
 /*The perfect blend*/
 .perfect-blend{
     background: url("images/AdobeStock_283373265.jpeg") center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
+
+.borshch{
+    background: url("images/1.jpeg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*Varenyky Image */
+.anymatedVarenyky{
+    position: relative;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.section {
+  max-width: 100%;
+  min-height: 40vh;
+  padding: 4px;
+  margin: auto;
+/*  color: #ffffff;*/
+    
+}
+/*
+.section.bg-static {
+  background-color: #85c1e9;
+  background-image: urls("https://psu.box.com/s/feyawohv8izkonqvxtt4t9xyjgyolyxb");
+  background-size: cover;
+  background-position: center;
+}
+*/
+.section .bg-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  background-image: url("images/AdobeStock_271815187-removebg-2.png");
+  background-size: 100%;
+/*    background-repeat:repeat;*/
+  background-position: center;
+
+}
+
 
 /*Footer*/
 footer{
@@ -587,6 +667,20 @@ footer{
     margin-right: -3px;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*
+.sticky + .content {
+  padding-top: 60px;
+}
+*/
+
 img.rounded-corners{
     border-radius: 3px;
 }
@@ -594,6 +688,12 @@ img.rounded-corners{
 .discover-our-story{
     
 }
+/*
+#mainMenuButton {
+    padding: 20px;
+    
+}
+*/
 
 /*Media queries*/
 @media screen and (min-width: 900px) {
@@ -659,6 +759,10 @@ img.rounded-corners{
     .sub-headline2{
         font-size: 8rem;
     }
+    
+    .sub-headline3{
+        font-size: 8rem;
+    }
 
     .first-letter{
         font-size: 12.2rem;
@@ -722,6 +826,28 @@ img.rounded-corners{
     .newsletter-btn{
         margin-left: 15rem;
     }
+}
+
+@media only screen and (max-device-width: 749px) {
+       .hero{
+        background-attachment: scroll;
+    }
+    .bar-recipes{
+        background-attachment: scroll;
+    }
+    .tasteful-recipes{
+        background-attachment: scroll;
+    }
+    .perfect-blend{
+        background-attachment: scroll;
+    }
+    .anymatedVarenyky{
+        background-attachment: scroll;
+    }
+    .borshch{
+        background-attachment: scroll;
+    }
+    
 }
 
 /*Animations*/
