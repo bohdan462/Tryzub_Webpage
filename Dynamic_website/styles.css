@@ -174,16 +174,28 @@ header{
 .hero{
     width: 100%;
     height: 100vh;
-/*    background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.1)), url("images/DSC05405.jpg") center;*/
+/*    background: linear-gradient(rgba(255, 0, 0, 0.4), rgba(47, 23, 15, 0.1)), url("images/DSC05405.jpg") center;*/
     background: url("images/DSC05405.jpg") center;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     text-align: center;
+    
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(6px);
+    background: inherit;
 }
 
 .sub-headline{
